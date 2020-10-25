@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics</title>
+</head>
+
+<body>
+    <script>
+        // Exercises #15-24 (Week 4) and #25-30 (Week 5)
+
+        // Part 2: Exercises #25-30 (Week 5)
+        // Exercise 25
+        let lottoNumbers = [1, 2, 3, 4, 5, 6]
+
+        // Exercise 26
+        const leaderboard = ['Harry', 'Lua', 'Hermoine', 'Bellatrix'];
+        leaderboard[1] = 'Luna';
+        leaderboard[3] = 'Draco';
+        // leaderboard // returns [ 'Harry', 'Luna', 'Hermoine', 'Draco' ]
+
+        // Exercise 27
+        const planets = ['The Moon', 'Venus', 'Earth', 'Mars', 'Jupiter'];
+        planets.shift(); // removes the first element, 'The Moon'
+        planets.push('Saturn'); // adds to the end of the array
+        planets.unshift('Mercury'); // adds to the beginning
+
+        // Exercise 28
+        const airplaneSeats = [
+            ['Ruth', 'Anthony', 'Stevie'],
+            ['Amelia', 'Pedro', 'Maya'],
+            ['Xavier', 'Ananya', 'Luis'],
+            ['Luke', null, 'Deniz'],
+            ['Rin', 'Sakura', 'Francisco']
+        ];
+        airplaneSeats[3][1] = 'Hugo';
+
+        // Exercise 29
+        const product = {
+            name: "Gummy Bears",
+            inStock: true,
+            price: 1.99,
+            flavors: ['grape', 'apple', 'cherry']
+        }
+
+        // Exercise 30
+        const restaurant = {
+            name: 'Ichiran Ramen',
+            address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
+            city: 'Brooklyn',
+            state: 'NY',
+            zipcode: '11206',
+        }
+        let fullAddress = `${restaurant.address}, ${restaurant.city}, ${restaurant.state} ${restaurant.zipcode}`
+
+
+        // Part 1: Exercises 15-24 (Week 4)
+        // Exercises 15, 16, 17
+        let myLuckyNumber = 37;
+        let octopusLimbs = 8;
+
+        const boilingPointC = 100;
+        const boilingPointF = 212;
+
+        let bestColor = "purple";
+        let quote = 'You had me at "hello"'
+
+        // Exercise 18
+        const message = "    TASTE THE RAINBOW!  ";
+        let whisper = message.toLowerCase().trim()
+
+        // Exercise 19
+        const word = 'skateboard';
+        let facialHair = word.slice(5).replace("o", 'e')
+
+        // Exercise 20
+        const die1 = Math.floor(Math.random() * 6) + 1; //random number from 1-6
+        const die2 = Math.floor(Math.random() * 6) + 1; //random number from 1-6
+
+        let roll = `You rolled a ${die1} and a ${die2}. They sum to ${die1 + die2}`
+
+        // Exercise 21
+        function isEven(num) {
+            if (num % 2 === 0) console.log('even')
+        }
+
+        // Exercise 22
+        function getColor(phrase) {
+            if (phrase === 'stop') console.log('red')
+            else if (phrase === 'slow') console.log('yellow')
+            else if (phrase === 'go') console.log('green')
+            else console.log('purple')
+        }
+
+        // Exercise 23
+        const num = 102; // "YOU GOT ME!" prints out
+
+        if (num <= 100) {
+            if (num >= 50) {
+                console.log("HEY!");
+            }
+        } else {
+            if (num < 103) {
+                if (num % 2 === 0) {
+                    console.log("YOU GOT ME!");
+                }
+            }
+        }
+
+        // Exercise 24
+        const mystery = 'Please7';
+        if (mystery[0] === 'P' && mystery.length > 5 && mystery.indexOf('7') !== -1) {
+            console.log("YOU GOT IT!!!");
+        }
+    </script>
+</body>
+
+</html>
